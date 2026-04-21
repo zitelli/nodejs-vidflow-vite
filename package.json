@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite build --watch videos.json",
+    "dev": "vite",
     "build": "vite build",
     "build-preview": "vite build --watch",
     "preview": "vite preview",
@@ -16,9 +16,9 @@
     "eslint": "8.52.0",
     "json-server": "0.17.4",
     "prettier": "3.8.2",
-    "vite": "^8.0.8"
+    "vite": "^4.4.5"
   },
   "dependencies": {
-    "axios": "^1.15.0"
+    "axios": "1.6.0"
   }
 }
