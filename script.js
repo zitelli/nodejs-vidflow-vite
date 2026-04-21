@@ -17,14 +17,17 @@ async function buscarEMostrarVideos() {
     // const videos = await busca.json();
     // const busca = await axios.get("http://localhost:3000/videos");
 
-    // const urlVideos = import.meta.env.PROD
-    //   ? "https://gist.githubusercontent.com/zitelli/4ea29d7a1ed49fbc9bcbd4b87c6b60ac/raw/70bc1d81ed71baa89a37b8d7f52bd7ddfaf1d7ac/videos.json"
-    //   : "http://localhost:3000/videos";
+    const urlVideos = import.meta.env.PROD
+      ? "https://gist.githubusercontent.com/zitelli/4ea29d7a1ed49fbc9bcbd4b87c6b60ac/raw/70bc1d81ed71baa89a37b8d7f52bd7ddfaf1d7ac/videos.json"
+      : "http://localhost:3000/videos";
 
-    const urlVideos = import.meta.env.VITE_URL_VIDEOS;
+    console.log(import.meta.env.PROD);
+
+    console.log(urlVideos);
 
     const busca = await axios.get(urlVideos);
-    //    console.log(busca);
+
+    console.log(busca);
 
     const videos = busca.data;
 

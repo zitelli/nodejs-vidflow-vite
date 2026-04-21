@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite build --watch videos.json",
     "build": "vite build",
     "build-preview": "vite build --watch",
     "preview": "vite preview",
